@@ -124,11 +124,18 @@ function getSentenceArr2(arr)
 
     for (let i = 0; i < arr.length; i++)
      {
-        str += arr[i] + GAP;
+        if(i == arr.length -1)
+        {
+            str += arr[i] + PUNCT;
+        }
+        else
+        {
+            str += arr[i] + GAP;
+        }
         // output(str);
      }
 
-        str = str + PUNCT;
+       
 
     return str; 
 }
